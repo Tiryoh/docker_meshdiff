@@ -10,7 +10,7 @@ export HOME=/home/user
 
 
 if [ -d /work ]; then
-    if [ -d /work/branches ] && [ -d /work/info ]; then # if git repo
+    if [ -d /work/refs ] && [ -d /work/objects ]; then # if git repo
         cd /work && /sbin/su-exec user /unpack-objects.sh
         sed -e 's/name="TargetName" value=""/name="TargetName" value="target_repo"/' -i /usr/share/nginx/html/index.html
         ln -s /work /usr/share/nginx/html/target/target_repo
