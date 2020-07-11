@@ -1,0 +1,3 @@
+[submodule "meshdiff"]
+	path = meshdiff
+	url = https://github.com/nomumu/meshdiff
