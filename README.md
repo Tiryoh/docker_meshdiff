@@ -24,12 +24,20 @@ git clone --mirror https://github.com/rt-net/crane_x7_ros.git
 docker run --rm -p 8080:80 -v $(pwd):/work -e UID=$(id -u) -e GID=$(id -g) tiryoh/meshdiff
 ```
 
+Dockerコンテナの起動時に[GitのPackfile](https://git-scm.com/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Packfile)を自動で展開するようにしています。
+
+### 3. Webブラウザでmeshdiffを起動
+
+Chrome等のWebブラウザで http://127.0.0.1:8080 にアクセスしてmeshdiffを開きます。  
+「Gitデータロード」をクリックするとロードが始まります。ロードには少々時間がかかる場合があります。
+
+![Image from Gyazo](https://i.gyazo.com/4e592cb7c1a5f678b6e7ec90b93852ea.gif)
+
 ## LICENSE
 
 (C) 2020 Daisuke Sato
 
 This repository is released under the MIT License, see [LICENSE](./LICENSE).  
-Unless attributed otherwise, everything in this repository is under the MIT License.
 
 ### Acknowledgements
 
